@@ -1,25 +1,194 @@
-```html
-<form class="contact-form" id="contactForm" action="https://formspree.io/f/myezygod" method="POST">
-  <label>
-    Imię / firma
-    <input type="text" name="name" placeholder="Jak się nazywasz?" required>
-  </label>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VoltechNet – instalacje elektryczne, oświetlenie, monitoring CCTV, sieci LAN/Wi-Fi, kontrola dostępu i smart home.">
+  <title>VoltechNet | Instalacje elektryczne i teletechniczne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="VoltechNet">
+        <span class="logo-mark">V</span>
+        <span>Voltech<span>Net</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="#uslugi">Usługi</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#realizacje">Realizacje</a>
+        <a href="#kontakt" class="nav-cta">Kontakt</a>
+      </nav>
+    </div>
+  </header>
 
-  <label>
-    E-mail
-    <input type="email" name="email" placeholder="twoj@email.pl" required>
-  </label>
+  <main>
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span></span> ELEKTRYKA • CCTV • SIECI • SMART</div>
+        <h1>Technologia,<br><em>która działa.</em></h1>
+        <p class="hero-text">VoltechNet wykonuje instalacje elektryczne i teletechniczne — od drobnych modernizacji po monitoring, sieci LAN/Wi‑Fi i inteligentne sterowanie.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kontakt">Zapytaj o usługę <span>→</span></a>
+          <a class="btn btn-ghost" href="#uslugi">Poznaj ofertę</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>7</strong><span>obszarów<br>usług</span></div>
+          <div><strong>01</strong><span>konkretny<br>kontakt</span></div>
+          <div><strong>24/7</strong><span>technologia<br>pod kontrolą</span></div>
+        </div>
+      </div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+    </section>
 
-  <label>
-    Wiadomość
-    <textarea name="message" rows="5" placeholder="Opisz krótko, czego potrzebujesz..." required></textarea>
-  </label>
+    <section class="services section" id="uslugi">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">01 / OFERTA</div>
+            <h2>Usługi dopasowane<br>do Twoich potrzeb.</h2>
+          </div>
+          <p>Łączymy elektrykę, automatykę i rozwiązania sieciowe, aby instalacje były funkcjonalne, estetyczne i wygodne w codziennym użytkowaniu.</p>
+        </div>
 
-  <button class="btn btn-primary" type="submit">
-    Wyślij zapytanie <span>→</span>
-  </button>
+        <div class="services-grid">
+          <article class="service-card featured">
+            <div class="service-icon">⌁</div>
+            <span class="service-number">01</span>
+            <h3>Drobne przeróbki<br>i modernizacje</h3>
+            <p>Rozbudowa, poprawa i modernizacja istniejących instalacji elektrycznych.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">◉</div>
+            <span class="service-number">02</span>
+            <h3>Płyty<br>indukcyjne</h3>
+            <p>Montaż oraz bezpieczne podłączenie płyt indukcyjnych.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">✦</div>
+            <span class="service-number">03</span>
+            <h3>Oświetlenie,<br>gniazda i osprzęt</h3>
+            <p>Montaż oświetlenia, gniazd oraz osprzętu elektrycznego.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">◌</div>
+            <span class="service-number">04</span>
+            <h3>Monitoring<br>CCTV</h3>
+            <p>Montaż, konfiguracja i uruchomienie systemów monitoringu.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⌘</div>
+            <span class="service-number">05</span>
+            <h3>Sieci komputerowe<br>LAN / Wi‑Fi</h3>
+            <p>Okablowanie i konfiguracja sieci dla domu, biura i firmy.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">▣</div>
+            <span class="service-number">06</span>
+            <h3>Kontrola dostępu<br>i wideodomofony</h3>
+            <p>Systemy kontroli dostępu i wideodomofony dopasowane do obiektu.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⌁</div>
+            <span class="service-number">07</span>
+            <h3>Sterowanie urządzeniami<br>ze smartfona</h3>
+            <p>Wygodne sterowanie wybranymi urządzeniami z poziomu telefonu.</p>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <span class="service-number">08</span>
+            <h3>Wymiana i podłączenie<br>urządzeń elektrycznych</h3>
+            <p>Wymiana oraz podłączanie urządzeń elektrycznych.</p>
+            <span class="arrow">↗</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <p class="form-note">Wiadomość zostanie wysłana na adres e-mail właściciela formularza.</p>
-  <p class="form-success" aria-live="polite"></p>
-</form>
-```
+    <section class="about section" id="o-nas">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <div class="visual-lines"></div>
+          <div class="voltage">230<span>V</span></div>
+          <div class="visual-label">ELEKTRYKA<br>& TECHNOLOGIA</div>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">02 / VOLTECHNET</div>
+          <h2>Jedna ekipa.<br><em>Wiele rozwiązań.</em></h2>
+          <p>VoltechNet to praktyczne podejście do instalacji elektrycznych i nowoczesnych technologii. Realizujemy usługi związane z elektryką, monitoringiem, sieciami komputerowymi, kontrolą dostępu i wygodnym sterowaniem urządzeniami.</p>
+          <div class="checks">
+            <div><span>✓</span> Indywidualne podejście</div>
+            <div><span>✓</span> Estetyczne wykonanie</div>
+            <div><span>✓</span> Nowoczesne rozwiązania</div>
+            <div><span>✓</span> Jasne ustalenia zakresu prac</div>
+          </div>
+          <a href="#kontakt" class="text-link">Porozmawiajmy o Twojej instalacji →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="realizacje">
+      <div class="container">
+        <div class="section-head compact">
+          <div>
+            <div class="eyebrow">03 / JAK PRACUJEMY</div>
+            <h2>Prosto od pomysłu<br>do działającego rozwiązania.</h2>
+          </div>
+        </div>
+        <div class="process-grid">
+          <div class="process-step"><span>01</span><h3>Kontakt</h3><p>Opowiadasz, czego potrzebujesz i jaki jest zakres prac.</p></div>
+          <div class="process-step"><span>02</span><h3>Ustalenia</h3><p>Dobieramy rozwiązanie i ustalamy najważniejsze szczegóły.</p></div>
+          <div class="process-step"><span>03</span><h3>Realizacja</h3><p>Wykonujemy montaż, podłączenia i konfigurację.</p></div>
+          <div class="process-step"><span>04</span><h3>Gotowe</h3><p>Sprawdzamy działanie instalacji i przekazujemy ją do użytkowania.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontakt">
+      <div class="container contact-box">
+        <div class="contact-copy">
+          <div class="eyebrow">04 / KONTAKT</div>
+          <h2>Masz temat?<br><em>Zróbmy to.</em></h2>
+          <p>Opisz krótko, czego potrzebujesz. Skontaktujemy się, aby ustalić szczegóły.</p>
+          <div class="contact-details">
+            <div><span>☎</span><div><small>TELEFON</small><strong>+48 XXX XXX XXX</strong></div></div>
+            <div><span>✉</span><div><small>E-MAIL</small><strong>kontakt@voltechnet.pl</strong></div></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Imię / firma<input type="text" name="name" placeholder="Jak się nazywasz?" required></label>
+          <label>E-mail<input type="email" name="email" placeholder="twoj@email.pl" required></label>
+          <label>Wiadomość<textarea name="message" rows="5" placeholder="Opisz krótko, czego potrzebujesz..." required></textarea></label>
+          <button class="btn btn-primary" type="submit">Wyślij zapytanie <span>→</span></button>
+          <p class="form-note">Formularz jest demonstracyjny — podłącz własny adres e-mail lub backend przed publikacją.</p>
+          <p class="form-success" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <a class="logo" href="#top"><span class="logo-mark">V</span><span>Voltech<span>Net</span></span></a>
+      <p>© <span id="year"></span> VoltechNet. Wszystkie prawa zastrzeżone.</p>
+      <a href="#top">Do góry ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
