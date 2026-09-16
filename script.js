@@ -11,10 +11,5 @@ document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const form = document.getElementById('contactForm');
-form?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const success = form.querySelector('.form-success');
-  success.textContent = 'Dziękujemy! To wersja demonstracyjna formularza — wiadomość nie została wysłana.';
-  form.reset();
+
 });
