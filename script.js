@@ -12,4 +12,4 @@ document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click
 document.getElementById('year').textContent = new Date().getFullYear();
 
 
-});
+
